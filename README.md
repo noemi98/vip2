@@ -25,16 +25,21 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
    composer install
 
 3. **Configurar el archivo .env:**
-   ```bash
-   cp .env.example .env
-\```
-   Luego en el archivo se tendrá que configurar los siguientes datos:  
-      database.default.hostname = <tu_host>  
-database.default.database = <nombre_de_base_de_datos>  
-database.default.username = <tu_usuario_de_base_de_datos>  
-database.default.password = <tu_contraseña_de_base_de_datos>  
-database.default.DBDriver = MySQLi  
-database.default.port = 3306  
+   - Copia el archivo de ejemplo `.env.example` a un nuevo archivo `.env`:
+
+     ```bash
+     cp .env.example .env
+     ```
+
+   - Luego, abre el archivo `.env` y configura los siguientes parámetros:
+
+     ```ini
+     database.default.hostname = <tu_host>
+     database.default.database = <nombre_de_base_de_datos>
+     database.default.username = <tu_usuario_de_base_de_datos>
+     database.default.password = <tu_contraseña_de_base_de_datos>
+     database.default.DBDriver = MySQLi
+     database.default.port = 3306  
 
 5. **Generar la clave de aplicación**
    ```bash
