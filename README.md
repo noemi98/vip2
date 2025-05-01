@@ -4,7 +4,7 @@
 Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehículos
 
 ## Importante para la puesta en marcha
-- PHP 7.4 o superior
+- PHP 8.1 o superior
 - Composer
 - Base de datos MySQL
 - Servidor local como **XAMPP**, **WAMP**
