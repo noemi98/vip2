@@ -12,7 +12,7 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
 ## Instrucciones
 1. Clonar el repositorio o descargar el ZIP
 2. Instalar dependencias con Composer
-   - ```bash
+```bash
 composer install
 3. Configurar el archivo .env:
    - cp .env.example .env
