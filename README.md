@@ -20,7 +20,8 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
 2. **Instalar dependencias con Composer**
 ```bash
 composer install  
-3. Configurar el archivo .env:
+
+3. **Configurar el archivo .env:**
    - cp .env.example .env
    - Luego en el archivo se tendrá que configurar los siguientes datos:  
       database.default.hostname = <tu_host>  
