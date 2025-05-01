@@ -43,7 +43,9 @@ database.default.port = 3306
    php spark keys:generate
 
 7. **Iniciar el servidor de desarrollo**
-   - php spark serve
+   ```bash
+   php spark serve
+
   
 Acceso localmente: http://localhost:8080
 
