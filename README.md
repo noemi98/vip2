@@ -40,6 +40,9 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
      database.default.password = <tu_contraseña_de_base_de_datos>
      database.default.DBDriver = MySQLi
      database.default.port = 3306  
+     ```
+
+   - No olvidar, ejecutar el Script de la BBDD (vip2cars.sql), y en base a ello, modificar los parámetros anteriores.
 
 5. **Generar la clave de aplicación**
    ```bash
