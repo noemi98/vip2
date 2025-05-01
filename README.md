@@ -10,7 +10,12 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
 - Servidor local como **XAMPP**, **WAMP**
 
 ## Instrucciones
-1. Clonar el repositorio o descargar el ZIP
+1. **Clonar el repositorio o descargar el ZIP**
+
+   Para clonar el repositorio, ejecuta el siguiente comando:
+
+   ```bash
+   git clone https://github.com/noemi98/vip2.git
 2. Instalar dependencias con Composer
 ```bash
 composer install  
