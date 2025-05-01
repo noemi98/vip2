@@ -25,7 +25,8 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
    composer install
 
 3. **Configurar el archivo .env:**
-   - cp .env.example .env
+   ```bash
+   cp .env.example .env
    - Luego en el archivo se tendrá que configurar los siguientes datos:  
       database.default.hostname = <tu_host>  
 database.default.database = <nombre_de_base_de_datos>  
@@ -36,9 +37,9 @@ database.default.port = 3306
 
 
 
-4. Generar la clave de aplicación
+5. Generar la clave de aplicación
    - php spark keys:generate
-5. Iniciar el servidor de desarrollo
+6. Iniciar el servidor de desarrollo
    - php spark serve
   
 Acceso localmente: http://localhost:8080
