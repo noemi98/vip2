@@ -1,0 +1,202 @@
+{
+    "sourceFile": "public/assets/css/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 46,
+            "patches": [
+                {
+                    "date": 1745948029475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745963617511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,9 @@\n   \r\n   #panelLateral.abierto {\r\n     left: 0; /* Lo desliza a la vista */\r\n   }\r\n+\r\n+  .btn-primary{\r\n+    background-color: #145B9C !important;\r\n+  }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963626721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,7 @@\n   }\r\n \r\n   .btn-primary{\r\n     background-color: #145B9C !important;\r\n+    border: none;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963669878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,10 @@\n   .btn-primary{\r\n     background-color: #145B9C !important;\r\n     border: none;\r\n   }\r\n+\r\n+  .btn-success{\r\n+    background-color: #747D90 !important;\r\n+    border: none;\r\n+  }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963744099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,10 @@\n   .btn-success{\r\n     background-color: #747D90 !important;\r\n     border: none;\r\n   }\r\n+\r\n+  .btn-danger{\r\n+    background-color: #FF133F !important;\r\n+    border: none;\r\n+  }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963881022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,10 @@\n   .btn-danger{\r\n     background-color: #FF133F !important;\r\n     border: none;\r\n   }\r\n+\r\n+  .paginate_button{\r\n+    background-color: #747D90 !important;\r\n+    border: 1px solid #747D90 ;\r\n+  }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963961459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     background-color: #FF133F !important;\r\n     border: none;\r\n   }\r\n \r\n-  .paginate_button{\r\n+  .active>.page-link, .page-link.active{\r\n     background-color: #747D90 !important;\r\n     border: 1px solid #747D90 ;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1745963998532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,5 +59,9 @@\n   .active>.page-link, .page-link.active{\r\n     background-color: #747D90 !important;\r\n     border: 1px solid #747D90 ;\r\n   }\r\n+\r\n+  .page-link{\r\n+    color: #145B9C !important;\r\n+  }\r\n   \r\n"
+                },
+                {
+                    "date": 1745964018875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n \r\n   .active>.page-link, .page-link.active{\r\n     background-color: #747D90 !important;\r\n     border: 1px solid #747D90 ;\r\n+    color: white;\r\n   }\r\n \r\n   .page-link{\r\n     color: #145B9C !important;\r\n"
+                },
+                {
+                    "date": 1745964058503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n   .active>.page-link, .page-link.active{\r\n     background-color: #747D90 !important;\r\n     border: 1px solid #747D90 ;\r\n-    color: white;\r\n+    color: white !important;\r\n   }\r\n \r\n   .page-link{\r\n     color: #145B9C !important;\r\n"
+                },
+                {
+                    "date": 1746048702098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,7 @@\n   .page-link{\r\n     color: #145B9C !important;\r\n   }\r\n   \r\n+  #tblVehiculos {\r\n+    overflow-x: hidden;\r\n+}\r\n"
+                },
+                {
+                    "date": 1746048731631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n   .page-link{\r\n     color: #145B9C !important;\r\n   }\r\n   \r\n-  #tblVehiculos {\r\n+  .table-responsive {\r\n     overflow-x: hidden;\r\n }\r\n"
+                },
+                {
+                    "date": 1746048912302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,71 +1,76 @@\n-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');\r\n+@import url(\"https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap\");\r\n \r\n body {\r\n-    font-family: \"Reddit Sans\", sans-serif;\r\n-    font-optical-sizing: auto;\r\n-    font-weight: 400;\r\n-    font-style: normal;\r\n+  font-family: \"Reddit Sans\", sans-serif;\r\n+  font-optical-sizing: auto;\r\n+  font-weight: 400;\r\n+  font-style: normal;\r\n }\r\n \r\n-.navbar{\r\n-    background-color: black !important;\r\n-    text-align: center;\r\n-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n-    /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/\r\n+.navbar {\r\n+  background-color: black !important;\r\n+  text-align: center;\r\n+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n+  /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/\r\n }\r\n \r\n-.navbar img{\r\n-    width: 50px;\r\n+.navbar img {\r\n+  width: 50px;\r\n }\r\n \r\n .navbar-center {\r\n-    width: 100%;\r\n-    display: flex;\r\n-    justify-content: center;\r\n+  width: 100%;\r\n+  display: flex;\r\n+  justify-content: center;\r\n }\r\n \r\n #panelLateral {\r\n-    position: fixed;\r\n-    top: 0;\r\n-    left: -400px; /* Oculto inicialmente */\r\n-    width: 400px;\r\n-    height: 100%;\r\n-    background: #f8f9fa;\r\n-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);\r\n-    transition: left 0.3s ease;\r\n-    padding: 20px;\r\n-    z-index: 1000;\r\n-  }\r\n-  \r\n-  #panelLateral.abierto {\r\n-    left: 0; /* Lo desliza a la vista */\r\n-  }\r\n+  position: fixed;\r\n+  top: 0;\r\n+  left: -400px; /* Oculto inicialmente */\r\n+  width: 400px;\r\n+  height: 100%;\r\n+  background: #f8f9fa;\r\n+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);\r\n+  transition: left 0.3s ease;\r\n+  padding: 20px;\r\n+  z-index: 1000;\r\n+}\r\n \r\n-  .btn-primary{\r\n-    background-color: #145B9C !important;\r\n-    border: none;\r\n-  }\r\n+#panelLateral.abierto {\r\n+  left: 0; /* Lo desliza a la vista */\r\n+}\r\n \r\n-  .btn-success{\r\n-    background-color: #747D90 !important;\r\n-    border: none;\r\n-  }\r\n+.btn-primary {\r\n+  background-color: #145b9c !important;\r\n+  border: none;\r\n+}\r\n \r\n-  .btn-danger{\r\n-    background-color: #FF133F !important;\r\n-    border: none;\r\n-  }\r\n+.btn-success {\r\n+  background-color: #747d90 !important;\r\n+  border: none;\r\n+}\r\n \r\n-  .active>.page-link, .page-link.active{\r\n-    background-color: #747D90 !important;\r\n-    border: 1px solid #747D90 ;\r\n-    color: white !important;\r\n-  }\r\n+.btn-danger {\r\n+  background-color: #ff133f !important;\r\n+  border: none;\r\n+}\r\n \r\n-  .page-link{\r\n-    color: #145B9C !important;\r\n-  }\r\n-  \r\n-  .table-responsive {\r\n-    overflow-x: hidden;\r\n+.active > .page-link,\r\n+.page-link.active {\r\n+  background-color: #747d90 !important;\r\n+  border: 1px solid #747d90;\r\n+  color: white !important;\r\n }\r\n+\r\n+.page-link {\r\n+  color: #145b9c !important;\r\n+}\r\n+\r\n+.table-responsive {\r\n+  overflow-x: hidden;\r\n+}\r\n+\r\n+#tblVehiculos thead th{\r\n+  text-align: center;\r\n+}\r\n"
+                },
+                {
+                    "date": 1746048933864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,7 +70,7 @@\n .table-responsive {\r\n   overflow-x: hidden;\r\n }\r\n \r\n-#tblVehiculos thead th{\r\n+#tblVehiculos thead th, #tblVehiculos tbody td{\r\n   text-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1746053108582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,4 +73,8 @@\n \r\n #tblVehiculos thead th, #tblVehiculos tbody td{\r\n   text-align: center;\r\n }\r\n+\r\n+.fa-user-plus{\r\n+  font-size: 32px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1746053199739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,5 +76,6 @@\n }\r\n \r\n .fa-user-plus{\r\n   font-size: 32px;\r\n+  color: #145b9c;\r\n }\r\n"
+                },
+                {
+                    "date": 1746054153231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,4 +78,10 @@\n .fa-user-plus{\r\n   font-size: 32px;\r\n   color: #145b9c;\r\n }\r\n+\r\n+.contacto-section {\r\n+  border: 1px solid #ccc;\r\n+  background-color: #f9f9f9;\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1746054188234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,7 @@\n }\r\n \r\n .contacto-section {\r\n   border: 1px solid #ccc;\r\n-  background-color: #f9f9f9;\r\n+  background-color: #BFD4E7;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746054202147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,7 @@\n }\r\n \r\n .contacto-section {\r\n   border: 1px solid #ccc;\r\n-  background-color: #BFD4E7;\r\n+  background-color: #f9f9f9;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746054226753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,8 @@\n   color: #145b9c;\r\n }\r\n \r\n .contacto-section {\r\n-  border: 1px solid #ccc;\r\n+  border: 1px solid #145B9C;\r\n   background-color: #f9f9f9;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746054237850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,8 @@\n   color: #145b9c;\r\n }\r\n \r\n .contacto-section {\r\n-  border: 1px solid #145B9C;\r\n+  border: 2px solid #145B9C;\r\n   background-color: #f9f9f9;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746054463271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,10 @@\n   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);\r\n   transition: left 0.3s ease;\r\n   padding: 20px;\r\n   z-index: 1000;\r\n+  overflow-y: auto;\r\n+  max-height: 100vh;\r\n }\r\n \r\n #panelLateral.abierto {\r\n   left: 0; /* Lo desliza a la vista */\r\n"
+                },
+                {
+                    "date": 1746054520206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,4 +86,8 @@\n   border: 2px solid #145B9C;\r\n   background-color: #f9f9f9;\r\n }\r\n \r\n+#formContacto h5{\r\n+  color: #145B9C;\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1746057012608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,4 +90,8 @@\n #formContacto h5{\r\n   color: #145B9C;\r\n }\r\n \r\n+#modalContacto .modal-content {\r\n+  border-radius: 10px;\r\n+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746058326893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n   border: 2px solid #145B9C;\r\n   background-color: #f9f9f9;\r\n }\r\n \r\n-#formContacto h5{\r\n+#formContacto h5, #modalContacto h5{\r\n   color: #145B9C;\r\n }\r\n \r\n #modalContacto .modal-content {\r\n"
+                },
+                {
+                    "date": 1746058684171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n \r\n .navbar {\r\n   background-color: black !important;\r\n   text-align: center;\r\n+  position: relative;\r\n+  overflow: hidden;\r\n   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n   /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746058713938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,27 @@\n   display: flex;\r\n   justify-content: center;\r\n }\r\n \r\n+.vehiculo {\r\n+  position: absolute;\r\n+  top: 10px;\r\n+  left: -100px;\r\n+  width: 60px;\r\n+  height: auto;\r\n+  animation: moverVehiculo 6s linear infinite;\r\n+  z-index: 10;\r\n+}\r\n+\r\n+@keyframes moverVehiculo {\r\n+  0% {\r\n+      left: -100px;\r\n+  }\r\n+  100% {\r\n+      left: 100%;\r\n+  }\r\n+}\r\n+\r\n #panelLateral {\r\n   position: fixed;\r\n   top: 0;\r\n   left: -400px; /* Oculto inicialmente */\r\n"
+                },
+                {
+                    "date": 1746058737460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n .vehiculo {\r\n   position: absolute;\r\n   top: 10px;\r\n   left: -100px;\r\n-  width: 60px;\r\n+  width: 120px;\r\n   height: auto;\r\n   animation: moverVehiculo 6s linear infinite;\r\n   z-index: 10;\r\n }\r\n"
+                },
+                {
+                    "date": 1746058798749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n .vehiculo {\r\n   position: absolute;\r\n   top: 10px;\r\n   left: -100px;\r\n-  width: 120px;\r\n+  width: 120px !important;\r\n   height: auto;\r\n   animation: moverVehiculo 6s linear infinite;\r\n   z-index: 10;\r\n }\r\n"
+                },
+                {
+                    "date": 1746058861383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n }\r\n \r\n .vehiculo {\r\n   position: absolute;\r\n-  top: 10px;\r\n+  bottom: 0;\r\n   left: -100px;\r\n   width: 120px !important;\r\n   height: auto;\r\n   animation: moverVehiculo 6s linear infinite;\r\n"
+                },
+                {
+                    "date": 1746059274286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,20 +32,33 @@\n   left: -100px;\r\n   width: 120px !important;\r\n   height: auto;\r\n   animation: moverVehiculo 6s linear infinite;\r\n-  z-index: 10;\r\n+  z-index: 5;\r\n }\r\n \r\n-@keyframes moverVehiculo {\r\n-  0% {\r\n-      left: -100px;\r\n-  }\r\n-  100% {\r\n-      left: 100%;\r\n-  }\r\n+.vehiculo-original {\r\n+  animation: moverVehiculoOriginal 6s linear infinite;\r\n }\r\n \r\n+.vehiculo-alt {\r\n+  animation: moverVehiculoAlt 6s linear infinite;\r\n+  z-index: 4;\r\n+}\r\n+\r\n+@keyframes moverVehiculoOriginal {\r\n+  0% { left: -100px; opacity: 1; }\r\n+  49% { opacity: 1; }\r\n+  50% { opacity: 0; } /* Desaparece detrás del logo */\r\n+  100% { left: 100%; opacity: 0; }\r\n+}\r\n+\r\n+@keyframes moverVehiculoAlt {\r\n+  0% { left: -100px; opacity: 0; }\r\n+  50% { left: 50%; opacity: 1; }\r\n+  100% { left: 100%; opacity: 1; }\r\n+}\r\n+\r\n #panelLateral {\r\n   position: fixed;\r\n   top: 0;\r\n   left: -400px; /* Oculto inicialmente */\r\n"
+                },
+                {
+                    "date": 1746059503688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,15 +47,16 @@\n \r\n @keyframes moverVehiculoOriginal {\r\n   0% { left: -100px; opacity: 1; }\r\n   49% { opacity: 1; }\r\n-  50% { opacity: 0; } /* Desaparece detrás del logo */\r\n+  50% { opacity: 0; }\r\n   100% { left: 100%; opacity: 0; }\r\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n-  50% { left: 50%; opacity: 1; }\r\n+  50% { left: 50%; opacity: 0; }\r\n+  51% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059648638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,12 @@\n   display: flex;\r\n   justify-content: center;\r\n }\r\n \r\n+.logo-container {\r\n+  z-index: 10;\r\n+}\r\n+\r\n .vehiculo {\r\n   position: absolute;\r\n   bottom: 0;\r\n   left: -100px;\r\n"
+                },
+                {
+                    "date": 1746059698253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n }\r\n \r\n @keyframes moverVehiculoOriginal {\r\n   0% { left: -100px; opacity: 1; }\r\n-  49% { opacity: 1; }\r\n+  48% { opacity: 1; }\r\n   50% { opacity: 0; }\r\n   100% { left: 100%; opacity: 0; }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746059733325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n   50% { left: 50%; opacity: 0; }\r\n-  51% { left: 50%; opacity: 1; }\r\n+  52% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059750139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n   50% { left: 50%; opacity: 0; }\r\n-  52% { left: 50%; opacity: 1; }\r\n+  49% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059755691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,10 @@\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n-  50% { left: 50%; opacity: 0; }\r\n-  49% { left: 50%; opacity: 1; }\r\n+  49% { left: 50%; opacity: 0; }\r\n+  50% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059771463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n-  49% { left: 50%; opacity: 0; }\r\n+  48% { left: 50%; opacity: 0; }\r\n   50% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1746059802983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   justify-content: center;\r\n }\r\n \r\n .logo-container {\r\n-  z-index: 10;\r\n+  z-index: 1;\r\n }\r\n \r\n .vehiculo {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1746059828991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n   48% { left: 50%; opacity: 0; }\r\n-  50% { left: 50%; opacity: 1; }\r\n+  49% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059893042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \r\n @keyframes moverVehiculoOriginal {\r\n   0% { left: -100px; opacity: 1; }\r\n   48% { opacity: 1; }\r\n-  50% { opacity: 0; }\r\n+  49% { opacity: 0; }\r\n   100% { left: 100%; opacity: 0; }\r\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n"
+                },
+                {
+                    "date": 1746059938694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,17 +50,17 @@\n }\r\n \r\n @keyframes moverVehiculoOriginal {\r\n   0% { left: -100px; opacity: 1; }\r\n-  48% { opacity: 1; }\r\n-  49% { opacity: 0; }\r\n+  49% { opacity: 1; }\r\n+  50% { opacity: 0; }\r\n   100% { left: 100%; opacity: 0; }\r\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n-  48% { left: 50%; opacity: 0; }\r\n-  49% { left: 50%; opacity: 1; }\r\n+  50% { left: 50%; opacity: 0; }\r\n+  51% { left: 50%; opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746059989150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,17 +50,17 @@\n }\r\n \r\n @keyframes moverVehiculoOriginal {\r\n   0% { left: -100px; opacity: 1; }\r\n-  49% { opacity: 1; }\r\n-  50% { opacity: 0; }\r\n+  48% { opacity: 1; }\r\n+  49% { opacity: 0; }\r\n   100% { left: 100%; opacity: 0; }\r\n }\r\n \r\n @keyframes moverVehiculoAlt {\r\n   0% { left: -100px; opacity: 0; }\r\n-  50% { left: 50%; opacity: 0; }\r\n-  51% { left: 50%; opacity: 1; }\r\n+  50% { opacity: 0; }\r\n+  51% { opacity: 1; }\r\n   100% { left: 100%; opacity: 1; }\r\n }\r\n \r\n #panelLateral {\r\n"
+                },
+                {
+                    "date": 1746060036344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   justify-content: center;\r\n }\r\n \r\n .logo-container {\r\n-  z-index: 1;\r\n+  z-index: 10;\r\n }\r\n \r\n .vehiculo {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1746060044627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   justify-content: center;\r\n }\r\n \r\n .logo-container {\r\n-  z-index: 10;\r\n+  z-index: 1;\r\n }\r\n \r\n .vehiculo {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1746060333863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \r\n #panelLateral {\r\n   position: fixed;\r\n   top: 0;\r\n-  left: -400px; /* Oculto inicialmente */\r\n+  left: -400px;\r\n   width: 400px;\r\n   height: 100%;\r\n   background: #f8f9fa;\r\n   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);\r\n@@ -78,9 +78,9 @@\n   max-height: 100vh;\r\n }\r\n \r\n #panelLateral.abierto {\r\n-  left: 0; /* Lo desliza a la vista */\r\n+  left: 0;\r\n }\r\n \r\n .btn-primary {\r\n   background-color: #145b9c !important;\r\n"
+                },
+                {
+                    "date": 1746062099182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,14 @@\n   animation: moverVehiculo 6s linear infinite;\r\n   z-index: 5;\r\n }\r\n \r\n+@media (max-width: 767px) {\r\n+  .vehiculo {\r\n+      max-width: 70px;\r\n+  }\r\n+}\r\n+\r\n .vehiculo-original {\r\n   animation: moverVehiculoOriginal 6s linear infinite;\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1745948029475,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');\r\n\r\nbody {\r\n    font-family: \"Reddit Sans\", sans-serif;\r\n    font-optical-sizing: auto;\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n.navbar{\r\n    background-color: black !important;\r\n    text-align: center;\r\n    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\r\n    /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/\r\n}\r\n\r\n.navbar img{\r\n    width: 50px;\r\n}\r\n\r\n.navbar-center {\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#panelLateral {\r\n    position: fixed;\r\n    top: 0;\r\n    left: -400px; /* Oculto inicialmente */\r\n    width: 400px;\r\n    height: 100%;\r\n    background: #f8f9fa;\r\n    box-shadow: 2px 0 5px rgba(0,0,0,0.2);\r\n    transition: left 0.3s ease;\r\n    padding: 20px;\r\n    z-index: 1000;\r\n  }\r\n  \r\n  #panelLateral.abierto {\r\n    left: 0; /* Lo desliza a la vista */\r\n  }\r\n  \r\n"
+        }
+    ]
+}

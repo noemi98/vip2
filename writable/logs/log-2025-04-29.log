@@ -1,0 +1,691 @@
+CRITICAL - 2025-04-29 01:56:32 --> TypeError: App\Controllers\Vehiculo::listado(): Return value must be of type string, none returned
+[Method: GET, Route: list]
+in APPPATH\Controllers\Vehiculo.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->listado()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 01:57:08 --> TypeError: App\Controllers\Vehiculo::listado(): Return value must be of type string, none returned
+[Method: GET, Route: list]
+in APPPATH\Controllers\Vehiculo.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->listado()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 02:00:49 --> TypeError: App\Controllers\Vehiculo::index(): Return value must be of type string, none returned
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 02:01:40 --> TypeError: App\Controllers\Vehiculo::index(): Return value must be of type string, none returned
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 02:01:41 --> TypeError: App\Controllers\Vehiculo::index(): Return value must be of type string, none returned
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 02:02:32 --> TypeError: App\Controllers\Vehiculo::index(): Return value must be of type string, none returned
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 15:35:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "vehiculos}"
+[Method: GET, Route: vehiculos%7D]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('vehiculos}')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('vehiculos}')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:33:46 --> ErrorException: Undefined property: App\Controllers\Vehiculo::$Vehiculo_model
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 10.
+ 1 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Vehiculo::$Vehiculo_model', 'D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:34:21 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Vehiculo')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Vehiculo')
+ 5 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Vehiculo', true)
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:34:21 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Vehiculo')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Vehiculo')
+ 5 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Vehiculo', true)
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:34:22 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Vehiculo')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Vehiculo')
+ 5 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Vehiculo', true)
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:34:36 --> Error: Class "App\Models\Vehiculo_model\BaseController" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Vehiculo')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Vehiculo')
+ 5 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Vehiculo', true)
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:37:33 --> ErrorException: Undefined property: App\Controllers\Vehiculo::$Vehiculo_model
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 11.
+ 1 APPPATH\Controllers\Vehiculo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Vehiculo::$Vehiculo_model', 'D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:37:34 --> ErrorException: Undefined property: App\Controllers\Vehiculo::$Vehiculo_model
+[Method: GET, Route: vehiculos]
+in APPPATH\Controllers\Vehiculo.php on line 11.
+ 1 APPPATH\Controllers\Vehiculo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Vehiculo::$Vehiculo_model', 'D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:38:08 --> Error: Class "CI_Model" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Models\\Vehiculo_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Vehiculo_model')
+ 4 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Vehiculo_model')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:38:09 --> Error: Class "CI_Model" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Models\\Vehiculo_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Vehiculo_model')
+ 4 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Vehiculo_model')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:38:09 --> Error: Class "CI_Model" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Models\\Vehiculo_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Vehiculo_model')
+ 4 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Vehiculo_model')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:38:09 --> Error: Class "CI_Model" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Models\\Vehiculo_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Vehiculo_model')
+ 4 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Vehiculo_model')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:38:09 --> Error: Class "CI_Model" not found
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(316): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp64\\www\\car-crud\\app\\Models\\Vehiculo_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Vehiculo_model')
+ 4 APPPATH\Controllers\Vehiculo.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Vehiculo_model')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:38:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:38:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:43:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:43:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:43:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:43:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:43:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:43:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:44:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:44:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:44:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:44:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:44:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:44:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:44:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:44:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:50:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:50:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:50:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'noec_user_car'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('noecer.com', 'noec_user_car', 'M4*xMJCyOr7xw-K...', 'noec_vip2cars', 3306, '', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'190.116.178.162' (using password: YES) in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#4 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2025-04-29 20:50:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'190.116.178.162' (using password: YES)
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-29 20:59:41 --> mysqli_sql_exception: execute command denied to user 'noec_user_car'@'%' for routine 'icmavrt_aula.get_marcas' in D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\wamp64\www\car-crud\system\Database\MySQLi\Connection.php(327): mysqli->query('call icmavrt_au...', 0)
+#1 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('call icmavrt_au...')
+#2 D:\wamp64\www\car-crud\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('call icmavrt_au...')
+#3 D:\wamp64\www\car-crud\app\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_au...')
+#4 D:\wamp64\www\car-crud\app\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+#5 D:\wamp64\www\car-crud\system\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+#6 D:\wamp64\www\car-crud\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+#7 D:\wamp64\www\car-crud\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\car-crud\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\wamp64\www\car-crud\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\wamp64\www\car-crud\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-04-29 20:59:41 --> CodeIgniter\Database\Exceptions\DatabaseException: execute command denied to user 'noec_user_car'@'%' for routine 'icmavrt_aula.get_marcas'
+[Method: GET, Route: vehiculos]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 2 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:59:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: execute command denied to user 'noec_user_car'@'%' for routine 'icmavrt_aula.get_marcas'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('call icmavrt_aula.get_marcas();')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('call icmavrt_aula.get_marcas();')
+ 3 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 4 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 20:59:41 --> [Caused by] mysqli_sql_exception: execute command denied to user 'noec_user_car'@'%' for routine 'icmavrt_aula.get_marcas'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('call icmavrt_aula.get_marcas();', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('call icmavrt_aula.get_marcas();')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('call icmavrt_aula.get_marcas();')
+ 4 APPPATH\Models\Vehiculo_model.php(15): CodeIgniter\Database\BaseConnection->query('call icmavrt_aula.get_marcas();')
+ 5 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 21:16:33 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 17.
+ 1 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-29 21:23:23 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+[Method: GET, Route: vehiculos]
+in APPPATH\Models\Vehiculo_model.php on line 17.
+ 1 APPPATH\Controllers\Vehiculo.php(11): App\Models\Vehiculo_model->getMarcas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

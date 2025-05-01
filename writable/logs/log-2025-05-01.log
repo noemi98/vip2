@@ -1,0 +1,10 @@
+CRITICAL - 2025-05-01 00:02:50 --> ErrorException: Undefined variable $vehiculo
+[Method: GET, Route: get_contacto/2]
+in APPPATH\Controllers\Vehiculo.php on line 114.
+ 1 APPPATH\Controllers\Vehiculo.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vehiculo', 'D:\\wamp64\\www\\car-crud\\app\\Controllers\\Vehiculo.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Vehiculo->getContacto('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vehiculo))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

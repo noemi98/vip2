@@ -1,0 +1,46 @@
+{
+    "sourceFile": "app/Models/VehiculoModel.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1746031297266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746050180775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,11 @@\n     function saveVehiculo($datosVehiculo)\r\n     {\r\n         return $this->insert($datosVehiculo);\r\n     }\r\n+\r\n+    function getVehiculoById($codVehiculo)\r\n+    {\r\n+        $query = $this->db->query(\"call get_vehiculo_x_codigo(\".$codVehiculo.\");\");\r\n+\t\treturn $query->getResult();\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746051304987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n {\r\n     protected $table      = 'vehiculos';\r\n     protected $primaryKey = 'codigo';\r\n \r\n-    protected $allowedFields = ['placa', 'codMarca', 'modelo', 'anioFabricacion','codCliente'];\r\n+    protected $allowedFields = ['placa', 'codMarca', 'modelo', 'anioFabricacion','codCliente', 'habilitado'];\r\n \r\n     public function __construct() {\r\n         parent::__construct();\r\n     }\r\n@@ -36,5 +36,10 @@\n     {\r\n         $query = $this->db->query(\"call get_vehiculo_x_codigo(\".$codVehiculo.\");\");\r\n \t\treturn $query->getResult();\r\n     }\r\n+\r\n+    function deleteVehiculo($codvehiculo)\r\n+    {\r\n+\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746051514342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         $query = $this->db->query(\"call get_vehiculo_x_codigo(\".$codVehiculo.\");\");\r\n \t\treturn $query->getResult();\r\n     }\r\n \r\n-    function deleteVehiculo($codvehiculo)\r\n+    function updateVehiculo($codVehiculo, $datosVehiculo)\r\n     {\r\n-\r\n+        return $this->update($codVehiculo, $datosVehiculo);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746055181695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,15 @@\n         $query = $this->db->query(\"call get_vehiculos();\");\r\n \t\treturn $query->getResult();\r\n     }\r\n \r\n+    function saveContacto($datosContacto)\r\n+    {\r\n+        $db = \\Config\\Database::connect();\r\n+        $db->table('clientes')->insert($datosContacto);\r\n+        return $db->insertID();\r\n+    }\r\n+\r\n     function saveVehiculo($datosVehiculo)\r\n     {\r\n         return $this->insert($datosVehiculo);\r\n     }\r\n"
+                },
+                {
+                    "date": 1746056103391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,28 @@\n         $db->table('clientes')->insert($datosContacto);\r\n         return $db->insertID();\r\n     }\r\n \r\n+    function updateOrsaveContacto($datosContacto)\r\n+    {\r\n+        $db = \\Config\\Database::connect();\r\n+        $builder = $db->table('clientes');\r\n+\r\n+        $nrodoc = $datosContacto['nroDoc'];\r\n+        $contacto = $builder->where('nrodoc', $nrodoc)->get()->getRowArray();\r\n+\r\n+        if ($contacto) {\r\n+            // Si existe, actualizar y devolver el código\r\n+            $builder->where('codigo', $contacto['codigo'])->update($datosContacto);\r\n+            return $contacto['codigo'];\r\n+        } else {\r\n+            // Si no existe, crearlo y devolver el código\r\n+            $builder->insert($datosContacto);\r\n+            return $db->insertID();\r\n+        }\r\n+\r\n+    }\r\n+\r\n     function saveVehiculo($datosVehiculo)\r\n     {\r\n         return $this->insert($datosVehiculo);\r\n     }\r\n"
+                },
+                {
+                    "date": 1746056113613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         $db = \\Config\\Database::connect();\r\n         $builder = $db->table('clientes');\r\n \r\n         $nrodoc = $datosContacto['nroDoc'];\r\n-        $contacto = $builder->where('nrodoc', $nrodoc)->get()->getRowArray();\r\n+        $contacto = $builder->where('nroDoc', $nrodoc)->get()->getRowArray();\r\n \r\n         if ($contacto) {\r\n             // Si existe, actualizar y devolver el código\r\n             $builder->where('codigo', $contacto['codigo'])->update($datosContacto);\r\n"
+                },
+                {
+                    "date": 1746057426061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,11 @@\n     function updateVehiculo($codVehiculo, $datosVehiculo)\r\n     {\r\n         return $this->update($codVehiculo, $datosVehiculo);\r\n     }\r\n+\r\n+    function getContactoById($codCliente)\r\n+    {\r\n+        $query = $this->db->query(\"call get_cliente_x_codigo(\".$codCliente.\");\");\r\n+\t\treturn $query->getResult();\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1746031297266,
+            "name": "Commit-0",
+            "content": "<?php\r\n\r\nnamespace App\\Models;\r\n\r\nuse CodeIgniter\\Model;\r\n\r\nclass VehiculoModel extends Model\r\n{\r\n    protected $table      = 'vehiculos';\r\n    protected $primaryKey = 'codigo';\r\n\r\n    protected $allowedFields = ['placa', 'codMarca', 'modelo', 'anioFabricacion','codCliente'];\r\n\r\n    public function __construct() {\r\n        parent::__construct();\r\n    }\r\n\r\n    function getMarcas()\r\n    {\r\n        $query = $this->db->query(\"call get_marcas();\");\r\n\t\treturn $query->getResult();\r\n    }\r\n\r\n    function getVehiculos()\r\n    {\r\n        $query = $this->db->query(\"call get_vehiculos();\");\r\n\t\treturn $query->getResult();\r\n    }\r\n\r\n    function saveVehiculo($datosVehiculo)\r\n    {\r\n        return $this->insert($datosVehiculo);\r\n    }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "sourceFile": "app/Models/Vehiculo_model.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1745957997707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745958659444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,23 @@\n <?php\r\n \r\n class Vehiculo_model extends CI_Model\r\n {\r\n+    public function __construct() {\r\n+        parent::__construct();\r\n+    }\r\n+\r\n     function getVehoculos()\r\n     {\r\n+        $query = $this->db->query(\"call icmavrt_aula.get_marcas();\");\r\n+\t\t\r\n+\t\tif($query->num_rows() > 0){\r\n+            return $query->result();\r\n+        }else{\r\n+            return false;\r\n+        }\r\n+    }\r\n \r\n-    }\r\n-    \r\n     function getMarcas()\r\n     {\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1745958691178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     public function __construct() {\r\n         parent::__construct();\r\n     }\r\n \r\n-    function getVehoculos()\r\n+    function getMarcas()\r\n     {\r\n         $query = $this->db->query(\"call icmavrt_aula.get_marcas();\");\r\n \t\t\r\n \t\tif($query->num_rows() > 0){\r\n@@ -16,9 +16,9 @@\n             return false;\r\n         }\r\n     }\r\n \r\n-    function getMarcas()\r\n+    function getVehiculos()\r\n     {\r\n \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745959127673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n <?php\r\n \r\n-class Vehiculo_model extends CI_Model\r\n+namespace App\\Models;\r\n+\r\n+use CodeIgniter\\Model;\r\n+\r\n+class Vehiculo_model extends Model\r\n {\r\n     public function __construct() {\r\n         parent::__construct();\r\n     }\r\n"
+                },
+                {
+                    "date": 1745961390655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     }\r\n \r\n     function getMarcas()\r\n     {\r\n-        $query = $this->db->query(\"call icmavrt_aula.get_marcas();\");\r\n+        $query = $this->db->query(\"call get_marcas();\");\r\n \t\t\r\n \t\tif($query->num_rows() > 0){\r\n             return $query->result();\r\n         }else{\r\n"
+                },
+                {
+                    "date": 1745961884853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,9 @@\n \r\n     function getMarcas()\r\n     {\r\n         $query = $this->db->query(\"call get_marcas();\");\r\n-\t\t\r\n-\t\tif($query->num_rows() > 0){\r\n-            return $query->result();\r\n-        }else{\r\n-            return false;\r\n-        }\r\n+\t\treturn $query->getResult();\r\n     }\r\n \r\n     function getVehiculos()\r\n     {\r\n"
+                },
+                {
+                    "date": 1745962337199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,8 @@\n     }\r\n \r\n     function getVehiculos()\r\n     {\r\n-\r\n+        $query = $this->db->query(\"call get_vehiculos();\");\r\n+\t\treturn $query->getResult();\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1745969251351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,7 @@\n     {\r\n         $query = $this->db->query(\"call get_vehiculos();\");\r\n \t\treturn $query->getResult();\r\n     }\r\n+\r\n+   \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746026337717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,13 @@\n use CodeIgniter\\Model;\r\n \r\n class Vehiculo_model extends Model\r\n {\r\n+    protected $table      = 'vehiculos';\r\n+    protected $primaryKey = 'codigo';\r\n+\r\n+    protected $allowedFields = ['placa', 'codMarca', 'modelo', 'anioFabricacion','codCliente'];\r\n+\r\n     public function __construct() {\r\n         parent::__construct();\r\n     }\r\n \r\n@@ -21,6 +26,9 @@\n         $query = $this->db->query(\"call get_vehiculos();\");\r\n \t\treturn $query->getResult();\r\n     }\r\n \r\n-   \r\n+    function saveVehiculo($datosVehiculo)\r\n+    {\r\n+\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746026478095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n     }\r\n \r\n     function saveVehiculo($datosVehiculo)\r\n     {\r\n-\r\n+        return $this->insert($datosVehiculo);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746031292736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n namespace App\\Models;\r\n \r\n use CodeIgniter\\Model;\r\n \r\n-class Vehiculo_model extends Model\r\n+class VehiculoModel extends Model\r\n {\r\n     protected $table      = 'vehiculos';\r\n     protected $primaryKey = 'codigo';\r\n \r\n"
+                }
+            ],
+            "date": 1745957997707,
+            "name": "Commit-0",
+            "content": "<?php\r\n\r\nclass Vehiculo_model extends CI_Model\r\n{\r\n    function getVehoculos()\r\n    {\r\n\r\n    }\r\n    \r\n    function getMarcas()\r\n    {\r\n\r\n    }\r\n}"
+        }
+    ]
+}

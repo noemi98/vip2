@@ -1,0 +1,162 @@
+{
+    "sourceFile": "app/Controllers/Vehiculo.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1745874422274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745874671444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,9 @@\n         echo \"Hola controller\";\r\n         \r\n         //return view('welcome_message');\r\n     }\r\n+    public function listado(): string\r\n+    {\r\n+        echo \"listado\";\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1745958724051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<?php\r\n+\r\n+namespace App\\Controllers;\r\n+\r\n+class Vehiculo extends BaseController\r\n+{\r\n+    public function index(): string\r\n+    {\r\n+        //return \"Hola desde el controlador Vehiculo\";\r\n+        $datos['marcas'] = $this->Vehiculo_model->getMarcas();\r\n+\r\n+        return view('vehiculos', $datos);\r\n+    }\r\n+    public function listado(): string\r\n+    {\r\n+        echo \"listado\";\r\n+    }\r\n+}\r\n"
+                },
+                {
+                    "date": 1745958860231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <?php\r\n \r\n namespace App\\Controllers;\r\n+namespace App\\Models;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n     public function index(): string\r\n@@ -15,21 +16,4 @@\n     {\r\n         echo \"listado\";\r\n     }\r\n }\r\n-<?php\r\n-\r\n-namespace App\\Controllers;\r\n-\r\n-class Vehiculo extends BaseController\r\n-{\r\n-    public function index(): string\r\n-    {\r\n-        echo \"Hola controller\";\r\n-        \r\n-        //return view('welcome_message');\r\n-    }\r\n-    public function listado(): string\r\n-    {\r\n-        echo \"listado\";\r\n-    }\r\n-}\r\n"
+                },
+                {
+                    "date": 1745958875973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+<?php\r\n+\r\n+namespace App\\Controllers;\r\n+namespace App\\Models\\Vehiculo_model;\r\n+\r\n+class Vehiculo extends BaseController\r\n+{\r\n+    public function index(): string\r\n+    {\r\n+        //return \"Hola desde el controlador Vehiculo\";\r\n+        $datos['marcas'] = $this->Vehiculo_model->getMarcas();\r\n+\r\n+        return view('vehiculos', $datos);\r\n+    }\r\n+    public function listado(): string\r\n+    {\r\n+        echo \"listado\";\r\n+    }\r\n+}\r\n"
+                },
+                {
+                    "date": 1745959050411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\r\n \r\n namespace App\\Controllers;\r\n-namespace App\\Models\\Vehiculo_model;\r\n+use App\\Models\\Vehiculo_model;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n     public function index(): string\r\n@@ -16,23 +16,4 @@\n     {\r\n         echo \"listado\";\r\n     }\r\n }\r\n-<?php\r\n-\r\n-namespace App\\Controllers;\r\n-namespace App\\Models;\r\n-\r\n-class Vehiculo extends BaseController\r\n-{\r\n-    public function index(): string\r\n-    {\r\n-        //return \"Hola desde el controlador Vehiculo\";\r\n-        $datos['marcas'] = $this->Vehiculo_model->getMarcas();\r\n-\r\n-        return view('vehiculos', $datos);\r\n-    }\r\n-    public function listado(): string\r\n-    {\r\n-        echo \"listado\";\r\n-    }\r\n-}\r\n"
+                },
+                {
+                    "date": 1745959086190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n class Vehiculo extends BaseController\r\n {\r\n     public function index(): string\r\n     {\r\n-        //return \"Hola desde el controlador Vehiculo\";\r\n-        $datos['marcas'] = $this->Vehiculo_model->getMarcas();\r\n+        $vehiculoModel = new Vehiculo_model();\r\n+        $datos['marcas'] = $vehiculoModel->getMarcas();\r\n \r\n         return view('vehiculos', $datos);\r\n     }\r\n     public function listado(): string\r\n"
+                },
+                {
+                    "date": 1745969744254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,10 @@\n     public function listado(): string\r\n     {\r\n         echo \"listado\";\r\n     }\r\n+\r\n+    public function saveVehiculo()\r\n+    {\r\n+        \r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1746026052141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,15 @@\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n-        \r\n-    }\r\n+        $datosVehiculo = [\r\n+            'placa' => $this->request->getPost('placa')\r\n+            'marca' => $this->request->getPost('marca')\r\n+            'modelo' => $this->request->getPost('modelo')\r\n+            'anioFab' => $this->request->getPost('anioFab')\r\n+        ];\r\n+\r\n+        $vehiculoModel = new Vehiculo_model();\r\n+        $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n+    }   \r\n }\r\n"
+                },
+                {
+                    "date": 1746026751484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,14 +19,24 @@\n \r\n     public function saveVehiculo()\r\n     {\r\n         $datosVehiculo = [\r\n-            'placa' => $this->request->getPost('placa')\r\n-            'marca' => $this->request->getPost('marca')\r\n-            'modelo' => $this->request->getPost('modelo')\r\n+            'placa' => $this->request->getPost('placa'),\r\n+            'marca' => $this->request->getPost('marca'),\r\n+            'modelo' => $this->request->getPost('modelo'),\r\n             'anioFab' => $this->request->getPost('anioFab')\r\n         ];\r\n \r\n         $vehiculoModel = new Vehiculo_model();\r\n         $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n+\r\n+        if($newVehiculo){\r\n+            return $this->response->setJSON([\r\n+                'status' => 'ok'\r\n+            ]);\r\n+        }else{\r\n+            return $this->response->setJSON([\r\n+                'status' => 'error'\r\n+            ]);\r\n+        }\r\n     }   \r\n }\r\n"
+                },
+                {
+                    "date": 1746026870210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         $datosVehiculo = [\r\n             'placa' => $this->request->getPost('placa'),\r\n             'marca' => $this->request->getPost('marca'),\r\n             'modelo' => $this->request->getPost('modelo'),\r\n-            'anioFab' => $this->request->getPost('anioFab')\r\n+            'anioFabRICACION' => $this->request->getPost('anioFab')\r\n         ];\r\n \r\n         $vehiculoModel = new Vehiculo_model();\r\n         $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n"
+                },
+                {
+                    "date": 1746030801090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,11 @@\n     public function saveVehiculo()\r\n     {\r\n         $datosVehiculo = [\r\n             'placa' => $this->request->getPost('placa'),\r\n-            'marca' => $this->request->getPost('marca'),\r\n+            'codMarca' => $this->request->getPost('marca'),\r\n             'modelo' => $this->request->getPost('modelo'),\r\n-            'anioFabRICACION' => $this->request->getPost('anioFab')\r\n+            'anioFabricacion' => $this->request->getPost('anioFab')\r\n         ];\r\n \r\n         $vehiculoModel = new Vehiculo_model();\r\n         $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n"
+                },
+                {
+                    "date": 1746031109632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,17 @@\n use App\\Models\\Vehiculo_model;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n+    public function __construct() {\r\n+        parent::__construct();\r\n+        $vehiculoModel = new Vehiculo_model();\r\n+\r\n+    }\r\n+\r\n     public function index(): string\r\n     {\r\n-        $vehiculoModel = new Vehiculo_model();\r\n+        \r\n         $datos['marcas'] = $vehiculoModel->getMarcas();\r\n \r\n         return view('vehiculos', $datos);\r\n     }\r\n@@ -25,9 +31,8 @@\n             'modelo' => $this->request->getPost('modelo'),\r\n             'anioFabricacion' => $this->request->getPost('anioFab')\r\n         ];\r\n \r\n-        $vehiculoModel = new Vehiculo_model();\r\n         $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n \r\n         if($newVehiculo){\r\n             return $this->response->setJSON([\r\n"
+                },
+                {
+                    "date": 1746031155780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n class Vehiculo extends BaseController\r\n {\r\n     public function __construct() {\r\n         parent::__construct();\r\n-        $vehiculoModel = new Vehiculo_model();\r\n-\r\n+        $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n     }\r\n \r\n     public function index(): string\r\n     {\r\n"
+                },
+                {
+                    "date": 1746031199986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n use App\\Models\\Vehiculo_model;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n-    public function __construct() {\r\n-        parent::__construct();\r\n+    public function __construct() \r\n+    {\r\n         $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n     }\r\n \r\n     public function index(): string\r\n"
+                },
+                {
+                    "date": 1746031222046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n class Vehiculo extends BaseController\r\n {\r\n     public function __construct() \r\n     {\r\n-        $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n+        $vehiculoModel = new Vehiculo_model();\r\n     }\r\n \r\n     public function index(): string\r\n     {\r\n"
+                },
+                {
+                    "date": 1746031235209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n use App\\Models\\Vehiculo_model;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n-    public function __construct() \r\n+    public function __construct()\r\n     {\r\n-        $vehiculoModel = new Vehiculo_model();\r\n+        $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n     }\r\n \r\n     public function index(): string\r\n     {\r\n"
+                },
+                {
+                    "date": 1746031298060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\r\n \r\n namespace App\\Controllers;\r\n-use App\\Models\\Vehiculo_model;\r\n+use App\\Models\\VehiculoModel;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n     public function __construct()\r\n"
+                },
+                {
+                    "date": 1746031343207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n {\r\n     public function __construct()\r\n     {\r\n         $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n+        $vehiculoModel = $this->vehiculoModel;\r\n     }\r\n \r\n     public function index(): string\r\n     {\r\n"
+                },
+                {
+                    "date": 1746031450154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,18 +4,18 @@\n use App\\Models\\VehiculoModel;\r\n \r\n class Vehiculo extends BaseController\r\n {\r\n+    protected $vehiculoModel;\r\n+\r\n     public function __construct()\r\n     {\r\n         $this->vehiculoModel = new \\App\\Models\\VehiculoModel();\r\n-        $vehiculoModel = $this->vehiculoModel;\r\n     }\r\n \r\n     public function index(): string\r\n     {\r\n-        \r\n-        $datos['marcas'] = $vehiculoModel->getMarcas();\r\n+        $datos['marcas'] = $this->vehiculoModel->getMarcas();\r\n \r\n         return view('vehiculos', $datos);\r\n     }\r\n     public function listado(): string\r\n@@ -31,9 +31,9 @@\n             'modelo' => $this->request->getPost('modelo'),\r\n             'anioFabricacion' => $this->request->getPost('anioFab')\r\n         ];\r\n \r\n-        $newVehiculo = $vehiculoModel->saveVehiculo($datosVehiculo);\r\n+        $newVehiculo = $this->vehiculoModel->saveVehiculo($datosVehiculo);\r\n \r\n         if($newVehiculo){\r\n             return $this->response->setJSON([\r\n                 'status' => 'ok'\r\n"
+                },
+                {
+                    "date": 1746032610339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n \r\n     public function index(): string\r\n     {\r\n         $datos['marcas'] = $this->vehiculoModel->getMarcas();\r\n-\r\n         return view('vehiculos', $datos);\r\n     }\r\n     public function listado(): string\r\n     {\r\n-        echo \"listado\";\r\n+        $datos['vehiculos'] = $this->vehiculoModel->getVehiculos();\r\n+        return $this->response->setJSON($datos);\r\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n"
+                },
+                {
+                    "date": 1746033188801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n         return view('vehiculos', $datos);\r\n     }\r\n     public function listado(): string\r\n     {\r\n-        $datos['vehiculos'] = $this->vehiculoModel->getVehiculos();\r\n-        return $this->response->setJSON($datos);\r\n+        $vehiculos = $this->vehiculoModel->getVehiculos();\r\n+        return $this->response->setJSON($vehiculos);\r\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n"
+                },
+                {
+                    "date": 1746033215344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n     public function listado(): string\r\n     {\r\n         $vehiculos = $this->vehiculoModel->getVehiculos();\r\n-        return $this->response->setJSON($vehiculos);\r\n+        return $this->response->setJSON(['data' => $vehiculos]);\r\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n"
+                },
+                {
+                    "date": 1746033515978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     {\r\n         $datos['marcas'] = $this->vehiculoModel->getMarcas();\r\n         return view('vehiculos', $datos);\r\n     }\r\n-    public function listado(): string\r\n+    public function listado(): \\CodeIgniter\\HTTP\\Response\r\n     {\r\n         $vehiculos = $this->vehiculoModel->getVehiculos();\r\n         return $this->response->setJSON(['data' => $vehiculos]);\r\n     }\r\n"
+                },
+                {
+                    "date": 1746034752034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n     public function listado(): \\CodeIgniter\\HTTP\\Response\r\n     {\r\n         $vehiculos = $this->vehiculoModel->getVehiculos();\r\n-        return $this->response->setJSON(['data' => $vehiculos]);\r\n+        return $this->response->setJSON($vehiculos);\r\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n"
+                },
+                {
+                    "date": 1746036116868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n     public function listado(): \\CodeIgniter\\HTTP\\Response\r\n     {\r\n         $vehiculos = $this->vehiculoModel->getVehiculos();\r\n-        return $this->response->setJSON($vehiculos);\r\n+        return $this->response->setJSON(['data' => $vehiculos]);\r\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n"
+                },
+                {
+                    "date": 1746050355967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,13 @@\n             return $this->response->setJSON([\r\n                 'status' => 'error'\r\n             ]);\r\n         }\r\n-    }   \r\n+    }\r\n+    public function getVehiculoById()\r\n+    {\r\n+        $codvehiculo = $this->request->getPost('codvehiculo');\r\n+        $vehiculo = $this->vehiculoModel->getVehiculoById($codvehiculo);\r\n+\r\n+        return $this->response->setJSON($vehiculo);\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1746051280602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,5 +50,21 @@\n         $vehiculo = $this->vehiculoModel->getVehiculoById($codvehiculo);\r\n \r\n         return $this->response->setJSON($vehiculo);\r\n     }\r\n+\r\n+    public function deleteVehiculo()\r\n+    {\r\n+        $codvehiculo = $this->request->getPost('codvehiculo');\r\n+        $vehiculo = $this->vehiculoModel->deleteVehiculo($codvehiculo);\r\n+\r\n+        if($vehiculo){\r\n+            return $this->response->setJSON([\r\n+                'status' => 'ok'\r\n+            ]);\r\n+        }else{\r\n+            return $this->response->setJSON([\r\n+                'status' => 'error'\r\n+            ]);\r\n+        }\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1746051492296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,13 +51,30 @@\n \r\n         return $this->response->setJSON($vehiculo);\r\n     }\r\n \r\n-    public function deleteVehiculo()\r\n+    public function updateVehiculo()\r\n     {\r\n         $codvehiculo = $this->request->getPost('codvehiculo');\r\n-        $vehiculo = $this->vehiculoModel->deleteVehiculo($codvehiculo);\r\n+        $isDelete = $this->request->getPost('isDelete');\r\n \r\n+        if($isDelete == 1){\r\n+            //DELETE\r\n+            $datosVehiculo = [\r\n+                'habilitado' => 0,\r\n+            ];\r\n+        }else{\r\n+            //UPDATE\r\n+            $datosVehiculo = [\r\n+                'placa' => $this->request->getPost('placa'),\r\n+                'codMarca' => $this->request->getPost('marca'),\r\n+                'modelo' => $this->request->getPost('modelo'),\r\n+                'anioFabricacion' => $this->request->getPost('anioFab')\r\n+            ];\r\n+        }\r\n+\r\n+        $vehiculo = $this->vehiculoModel->updateVehiculo($codVehiculo, $datosVehiculo);\r\n+\r\n         if($vehiculo){\r\n             return $this->response->setJSON([\r\n                 'status' => 'ok'\r\n             ]);\r\n@@ -65,6 +82,7 @@\n             return $this->response->setJSON([\r\n                 'status' => 'error'\r\n             ]);\r\n         }\r\n+        \r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1746051870856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n                 'anioFabricacion' => $this->request->getPost('anioFab')\r\n             ];\r\n         }\r\n \r\n-        $vehiculo = $this->vehiculoModel->updateVehiculo($codVehiculo, $datosVehiculo);\r\n+        $vehiculo = $this->vehiculoModel->updateVehiculo($codvehiculo, $datosVehiculo);\r\n \r\n         if($vehiculo){\r\n             return $this->response->setJSON([\r\n                 'status' => 'ok'\r\n"
+                },
+                {
+                    "date": 1746055227607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,16 +24,27 @@\n     }\r\n \r\n     public function saveVehiculo()\r\n     {\r\n+        $datosContacto = [\r\n+            'nombres' => $this->request->getPost('nombres'),\r\n+            'apellidos' => $this->request->getPost('apellidos'),\r\n+            'nrodoc' => $this->request->getPost('nrodoc'),\r\n+            'correo' => $this->request->getPost('correo')\r\n+            'telefono' => $this->request->getPost('telefono')\r\n+        ];\r\n+\r\n+        $codContacto = $this->vehiculoModel->saveContacto($datosContacto);\r\n+\r\n         $datosVehiculo = [\r\n             'placa' => $this->request->getPost('placa'),\r\n             'codMarca' => $this->request->getPost('marca'),\r\n             'modelo' => $this->request->getPost('modelo'),\r\n-            'anioFabricacion' => $this->request->getPost('anioFab')\r\n+            'anioFabricacion' => $this->request->getPost('anioFab'),\r\n+            'codCliente' => $codContacto,\r\n         ];\r\n \r\n-        $newVehiculo = $this->vehiculoModel->saveVehiculo($datosVehiculo);\r\n+        $newVehiculo = $this->vehiculoModel->saveVehiculo($datosVehiculo, $datosContacto);\r\n \r\n         if($newVehiculo){\r\n             return $this->response->setJSON([\r\n                 'status' => 'ok'\r\n"
+                },
+                {
+                    "date": 1746055241093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,11 +27,11 @@\n     {\r\n         $datosContacto = [\r\n             'nombres' => $this->request->getPost('nombres'),\r\n             'apellidos' => $this->request->getPost('apellidos'),\r\n-            'nrodoc' => $this->request->getPost('nrodoc'),\r\n-            'correo' => $this->request->getPost('correo')\r\n-            'telefono' => $this->request->getPost('telefono')\r\n+            'nroDoc' => $this->request->getPost('nrodoc'),\r\n+            'correo' => $this->request->getPost('correo'),\r\n+            'telefono' => $this->request->getPost('telefono'),\r\n         ];\r\n \r\n         $codContacto = $this->vehiculoModel->saveContacto($datosContacto);\r\n \r\n"
+                },
+                {
+                    "date": 1746055824105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,18 @@\n                 'habilitado' => 0,\r\n             ];\r\n         }else{\r\n             //UPDATE\r\n+            $datosContacto = [\r\n+                'nombres' => $this->request->getPost('nombres'),\r\n+                'apellidos' => $this->request->getPost('apellidos'),\r\n+                'nroDoc' => $this->request->getPost('nrodoc'),\r\n+                'correo' => $this->request->getPost('correo'),\r\n+                'telefono' => $this->request->getPost('telefono'),\r\n+            ];\r\n+    \r\n+            $codContacto = $this->vehiculoModel->updateOrsaveContacto($datosContacto);\r\n+\r\n             $datosVehiculo = [\r\n                 'placa' => $this->request->getPost('placa'),\r\n                 'codMarca' => $this->request->getPost('marca'),\r\n                 'modelo' => $this->request->getPost('modelo'),\r\n"
+                },
+                {
+                    "date": 1746055836239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,10 @@\n             $datosVehiculo = [\r\n                 'placa' => $this->request->getPost('placa'),\r\n                 'codMarca' => $this->request->getPost('marca'),\r\n                 'modelo' => $this->request->getPost('modelo'),\r\n-                'anioFabricacion' => $this->request->getPost('anioFab')\r\n+                'anioFabricacion' => $this->request->getPost('anioFab'),\r\n+                'codCliente' => $codContacto,\r\n             ];\r\n         }\r\n \r\n         $vehiculo = $this->vehiculoModel->updateVehiculo($codvehiculo, $datosVehiculo);\r\n"
+                },
+                {
+                    "date": 1746057394422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,5 +106,11 @@\n             ]);\r\n         }\r\n         \r\n     }\r\n+\r\n+    public function getContacto($codCliente)\r\n+    {\r\n+        $contacto = $this->vehiculoModel->getContactoById($codCliente);\r\n+        return $this->response->setJSON($contacto);\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1746057763205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,7 +110,16 @@\n \r\n     public function getContacto($codCliente)\r\n     {\r\n         $contacto = $this->vehiculoModel->getContactoById($codCliente);\r\n-        return $this->response->setJSON($contacto);\r\n+        if($vehiculo){\r\n+            return $this->response->setJSON([\r\n+                'status' => 'ok',\r\n+                'data' => $contacto,\r\n+            ]);\r\n+        }else{\r\n+            return $this->response->setJSON([\r\n+                'status' => 'error'\r\n+            ]);\r\n+        }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1746057784967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,9 +110,9 @@\n \r\n     public function getContacto($codCliente)\r\n     {\r\n         $contacto = $this->vehiculoModel->getContactoById($codCliente);\r\n-        if($vehiculo){\r\n+        if($contacto){\r\n             return $this->response->setJSON([\r\n                 'status' => 'ok',\r\n                 'data' => $contacto,\r\n             ]);\r\n"
+                }
+            ],
+            "date": 1745874422274,
+            "name": "Commit-0",
+            "content": "<?php\r\n\r\nnamespace App\\Controllers;\r\n\r\nclass Vehiculo extends BaseController\r\n{\r\n    public function index(): string\r\n    {\r\n        echo \"Hola controller\";\r\n        \r\n        //return view('welcome_message');\r\n    }\r\n}\r\n"
+        }
+    ]
+}

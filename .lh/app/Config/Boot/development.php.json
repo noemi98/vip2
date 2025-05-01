@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/Config/Boot/development.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1746060134194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746060157412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n  |\n  | If you set 'display_errors' to '1', CI4's detailed error report will show.\n  */\n error_reporting(E_ALL);\n-ini_set('display_errors', '1');\n+ini_set('display_errors', '0');\n \n /*\n  |--------------------------------------------------------------------------\n  | DEBUG BACKTRACES\n"
+                }
+            ],
+            "date": 1746060134194,
+            "name": "Commit-0",
+            "content": "<?php\n\n/*\n |--------------------------------------------------------------------------\n | ERROR DISPLAY\n |--------------------------------------------------------------------------\n | In development, we want to show as many errors as possible to help\n | make sure they don't make it to production. And save us hours of\n | painful debugging.\n |\n | If you set 'display_errors' to '1', CI4's detailed error report will show.\n */\nerror_reporting(E_ALL);\nini_set('display_errors', '1');\n\n/*\n |--------------------------------------------------------------------------\n | DEBUG BACKTRACES\n |--------------------------------------------------------------------------\n | If true, this constant will tell the error screens to display debug\n | backtraces along with the other error information. If you would\n | prefer to not see this, set this value to false.\n */\ndefined('SHOW_DEBUG_BACKTRACE') || define('SHOW_DEBUG_BACKTRACE', true);\n\n/*\n |--------------------------------------------------------------------------\n | DEBUG MODE\n |--------------------------------------------------------------------------\n | Debug mode is an experimental flag that can allow changes throughout\n | the system. This will control whether Kint is loaded, and a few other\n | items. It can always be used within your own application too.\n */\ndefined('CI_DEBUG') || define('CI_DEBUG', true);\n"
+        }
+    ]
+}
