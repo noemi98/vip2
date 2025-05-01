@@ -16,12 +16,14 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
 3. Configurar el archivo .env:
    - cp .env.example .env
    - Luego en el archivo se tendrá que configurar los siguientes datos:
-      database.default.hostname = <tu_host>
-      database.default.database = <nombre_de_base_de_datos>
-      database.default.username = <tu_usuario_de_base_de_datos>
-      database.default.password = <tu_contraseña_de_base_de_datos>
-      database.default.DBDriver = MySQLi
-      database.default.port = 3306
+      database.default.hostname = <tu_host>  
+database.default.database = <nombre_de_base_de_datos>  
+database.default.username = <tu_usuario_de_base_de_datos>  
+database.default.password = <tu_contraseña_de_base_de_datos>  
+database.default.DBDriver = MySQLi  
+database.default.port = 3306  
+
+
 
 4. Generar la clave de aplicación
    - php spark keys:generate
