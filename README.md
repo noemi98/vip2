@@ -34,12 +34,15 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
    - Luego, abre el archivo `.env` y configura los siguientes parámetros:
 
      ```ini
-     database.default.hostname = <tu_host>
+     database.default.hostname = <host>
      database.default.database = <nombre_de_base_de_datos>
-     database.default.username = <tu_usuario_de_base_de_datos>
-     database.default.password = <tu_contraseña_de_base_de_datos>
+     database.default.username = <usuario_de_base_de_datos>
+     database.default.password = <contraseña_de_base_de_datos>
      database.default.DBDriver = MySQLi
      database.default.port = 3306  
+     ```
+
+   - No olvidar, ejecutar el Script de la BBDD (vip2cars.sql), y en base a ello, modificar los parámetros anteriores.
 
 5. **Generar la clave de aplicación**
    ```bash
