@@ -18,8 +18,11 @@ Este proyecto tiene el funcionamiento básico (CRUD) para gestionar los vehícul
    git clone https://github.com/noemi98/vip2.git
 
 2. **Instalar dependencias con Composer**
-```bash
-composer install  
+
+   Para instalar las dependencias de Composer, ejecuta el siguiente comando en tu terminal:
+
+   ```bash
+   composer install
 
 3. **Configurar el archivo .env:**
    - cp .env.example .env
